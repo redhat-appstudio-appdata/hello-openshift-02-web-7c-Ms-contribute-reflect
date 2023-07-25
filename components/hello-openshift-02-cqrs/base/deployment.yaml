@@ -25,7 +25,7 @@ spec:
         app.kubernetes.io/instance: hello-openshift-02-cqrs
     spec:
       containers:
-      - image: java-quarkus-image:latest
+      - image: quay.io/redhat-user-workloads/jdavis-se-jboss-tenant/hello-openshift-02-web/hello-openshift-02-cqrs@sha256:c598e5395583a55334394d56963ab6d7123aafb7282a6a6a276bef831cf10889
         name: my-java-quarkus
         ports:
         - containerPort: 8081
