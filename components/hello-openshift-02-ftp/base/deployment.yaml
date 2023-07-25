@@ -25,7 +25,7 @@ spec:
         app.kubernetes.io/instance: hello-openshift-02-ftp
     spec:
       containers:
-      - image: java-quarkus-image:latest
+      - image: quay.io/redhat-user-workloads/jdavis-se-jboss-tenant/hello-openshift-02-web/hello-openshift-02-ftp@sha256:07d60629a9880643833257140d80d20036b4e30f9ef735a520f55790f1a1b135
         name: my-java-quarkus
         ports:
         - containerPort: 8081
