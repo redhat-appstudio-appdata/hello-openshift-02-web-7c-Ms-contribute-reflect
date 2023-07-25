@@ -1,0 +1,20 @@
+apiVersion: route.openshift.io/v1
+kind: Route
+metadata:
+  creationTimestamp: null
+  labels:
+    app.kubernetes.io/created-by: application-service
+    app.kubernetes.io/instance: hello-openshift-02-ftp
+    app.kubernetes.io/managed-by: kustomize
+    app.kubernetes.io/name: hello-openshift-02-ftp
+    app.kubernetes.io/part-of: hello-openshift-02-web
+  name: hello-openshift-02-ftpgduf
+spec:
+  path: /
+  port:
+    targetPort: 8081
+  to:
+    kind: Service
+    name: hello-openshift-02-ftp
+    weight: null
+status: {}
